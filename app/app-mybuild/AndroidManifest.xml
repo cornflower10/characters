@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cornflower.characters" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:hardwareAccelerated="false" android:name=".activity.ToTextActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Main"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="579f07b9e0f55a8d840025de"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Channel ID"/>
+        <activity android:name="com.cornflower.characters.activity.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="" android:name="com.text.push.DActivity" android:taskAffinity=".jfptask"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="" android:name="com.text.push.LActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="" android:name="com.text.push.HActivity"/>
+        <service android:name="com.text.push.OService"/>
+        <service android:name="com.cornflower.characters.appupdate.DownloadIntentService"/>
+    </application>
+</manifest>

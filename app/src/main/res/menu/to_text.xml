@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_settings"-->
+        <!--android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+    android:id="@+id/action_color"
+    android:title="颜色"
+    android:icon="@drawable/ic_colorize"
+    android:orderInCategory="100"
+    app:showAsAction="always" />
+    <item
+        android:id="@+id/action_bold"
+        android:title="加粗"
+        android:icon="@drawable/ic_bold"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_font"
+        android:title="字体"
+        android:icon="@drawable/ic_translate"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_save"
+        android:title="@string/action_save"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

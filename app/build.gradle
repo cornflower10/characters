@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "com.cornflower.characters"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.0.1"
+    }
+
+    //签名
+    signingConfigs {
+        r {
+//            storeFile file('C:/Users/bao/Desktop/keys.jks')
+            storePassword "Keys11111111"
+            keyAlias "keys"
+            keyPassword "Keys11111111"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "appKeyPre", "\"xxx\""
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "appKeyPre", "\"xxx\""
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.r
+        }
+        mybuild {
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.r
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //状态栏
+    //友盟
+    compile files('libs/yPush-com.text.push-1.2.5.jar')
+    //network - squareup
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.jakewharton:butterknife:7.+'
+    compile 'com.zhy:base-rvadapter:3.+'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.zhy:base-adapter:3.0.2'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.squareup.retrofit2:retrofit:latest.release'
+    compile 'com.squareup.retrofit2:adapter-rxjava:latest.release'
+    compile 'com.squareup.okhttp3:okhttp:latest.release'
+    compile 'com.squareup.okhttp3:logging-interceptor:latest.release'
+    compile 'com.squareup.retrofit2:converter-gson:latest.release'
+    compile 'com.zhy:autolayout:1.4.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="right|center_vertical"
+    tools:context="com.cornflower.characters.activity.AboutActivity">
+  <ImageButton
+      android:id="@+id/ib_suofang"
+      android:src="@drawable/suofang"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+<ImageButton
+    android:id="@+id/ib_bold"
+    android:src="@drawable/ic_bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+  <ImageButton
+      android:id="@+id/ib_color"
+      android:src="@drawable/ic_colorize"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <ImageButton
+      android:id="@+id/ib_translate"
+      android:src="@drawable/ic_translate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <ImageButton
+      android:id="@+id/ib_save"
+      android:layout_marginRight="@dimen/activity_vertical_margin"
+      android:src="@drawable/ic_save"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+</LinearLayout>

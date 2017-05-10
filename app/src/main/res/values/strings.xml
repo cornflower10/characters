@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">文字秀</string>
+    <string name="action_settings">添加</string>
+    <string name="action_about">关于</string>
+    <string name="action_save">保存</string>
+    <string name="main">主页</string>
+    <string name="set_font">设置文字</string>
+    <string name="space">&#160;</string>
+    <string-array name="welcome_text">
+        <item>想</item>
+        <item>借着荧光屏的光辉</item>
+        <item>把所有的喜爱都写在屏幕洒向远方</item>
+        <item>光芒照射到的地方</item>
+        <item>都是所有的热爱与牵念</item>
+        <item>当深夜无光</item>
+        <item>我必举萤屏破天际</item>
+        <item>只为你而守候</item>
+        <item> </item>
+    </string-array>
+    <string-array name="font_name">
+        <!--<item >pop字体</item>-->
+        <item>方正粗圆</item>
+        <item>方正古隶</item>
+        <item>方正华隶</item>
+        <item>方正静蕾简体</item>
+        <item>方正卡通简体</item>
+        <item>方正流行体简体</item>
+        <item>方正胖头鱼</item>
+        <item>方正启体简体</item>
+        <item>方正小篆</item>
+        <item>方正硬笔行书</item>
+        <item>方正正圆</item>
+        <item>方正准圆</item>
+        <item>华康少女字体</item>
+        <item>华康娃娃体</item>
+        <item>华康中黑字体</item>
+        <item>华文彩云</item>
+        <item>华文行楷</item>
+        <item>华文新宋</item>
+        <item>华文新魏</item>
+        <item>楷体</item>
+        <item>隶书</item>
+        <item>明兰</item>
+        <item>诺基亚古印</item>
+        <item>苹果丽黑</item>
+        <item>瘦金体</item>
+        <item> 微软雅黑14M</item>
+        <item>文泉驿微米黑</item>
+        <item>幼圆</item>
+    </string-array>
+    <string-array name="colors">
+        <item>#FFFFFF</item>
+        <item>#FF4081</item>
+        <item>#ffff4444</item>
+        <item>#ffff8800</item>
+        <item>#ffffbb33</item>
+        <item>#ffaa66cc</item>
+        <item>#ff99cc00</item>
+        <item>#ff669900</item>
+        <item>#ff00ddff</item>
+        <item>#ff33b5e5</item>
+        <item>#ff0099cc</item>
+    </string-array>
+</resources>

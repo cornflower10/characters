@@ -1,0 +1,37 @@
+
+签名者 #1:
+
+签名:
+
+  所有者: CN=xiejingbao, L=shanghai
+
+  发布者: CN=xiejingbao, L=shanghai
+
+  序列号: 238003e5
+
+  有效期开始日期: Mon Aug 15 14:48:34 CST 2016, 
+  截止日期: Fri Aug 09 14:48:34 CST 2041
+
+  证书指纹:
+	 
+      MD5: 79:0E:B6:9C:2F:E9:07:52:7F:EF:2C:33:DB:6C:7B:A1
+	 
+      SHA1: 2C:DA:A2:A9:BA:7E:7D:6F:0E:C6:1D:71:9A:FB:F1:95:2F:61:47:40
+	 
+      SHA256: BA:BA:34:D0:AA:76:DE:90:7F:00:10:57:4D:2B:60:6E:53:BE:72:FA:4D:05:CF:98:B8:EB:33:E1:F9:A2:AE:EB
+	 
+  签名算法名称: SHA256withRSA
+	 
+  版本: 3
+
+扩展: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: CD 7C AA 3C D0 AB C7 01   B8 95 51 74 EE D8 CE CC  ...<......Qt....
+0010: 40 76 31 5D                                        @v1]
+]
+]
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="190.0sp" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="薛之谦" android:singleLine="true" />
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:popupTheme="@style/AppTheme.PopupOverlay" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <View android:id="@id/v" android:background="@android:color/transparent" android:layout_width="100.0dip" android:layout_height="0.100000024dip" android:layout_marginRight="100.0dip" android:layout_alignParentRight="true" />
+    <View android:id="@id/v1" android:background="@android:color/transparent" android:layout_width="50.0dip" android:layout_height="0.100000024dip" android:layout_marginRight="50.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.MainActivity">
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+    <ImageButton
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_add"
+        android:id="@+id/ib_add"
+        android:layout_width="90px"
+        android:layout_height="90px" />
+    <com.cornflower.characters.widget.sweeplist.SwipeMenuListView
+       style="@style/listViewStyle"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/white"
+        android:id="@+id/lv"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--<android.support.v7.widget.AppCompatEditText-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="2"-->
+        <!--android:id="@+id/et"-->
+       <!--android:hint="请出入要显示的文字"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<ImageButton-->
+        <!--android:id="@+id/ib"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="@drawable/ic_send__24dp"-->
+        <!--android:layout_width="36dp"-->
+        <!--android:layout_height="36dp" />-->
+</RelativeLayout>
